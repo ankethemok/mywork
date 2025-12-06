@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<title>Anke's Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+<style>
+  
+  body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: rgba(250, 249, 247, 1);
+  font-family: "Inter";
+  font-weight: 400;
+}
+   
+  h1 {
+  font-family: "Kalnia", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 100px;
+  padding: 20px;
+  }
+ 
+  div.me-image {
+    position: relative;
+    opacity: 0.75;
+    margin-top: 130px;
+    height: 0px;
+    max-width: 1200px;
+    max-height: 700px;
+  }
+  
+  div.site-title {
+    font-family: "Kalnia", serif;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    top: -80px;
+    font-size: 150px;
+    height: 700px;
+    max-width: 1200px;
+    max-height: 700px;
+  }
+  
+  
+  h2 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  padding: 20px;
+  }
+  
+  p {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+  }
+  
+  footer {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+    break-after: always;
+  }
+  
+  nav {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(250, 249, 247, 1);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 0.5px solid rgba(250, 249, 247, 0.5);
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  }
+  
+  a {
+    color: rgba(250, 249, 247, 1);
+    text-decoration: none;
+  }
+  
+  ul li {
+  float: left;
+  }
+  
+  ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  color: rgba(250, 249, 247, 1);
+  }
+  
+  ul li a:hover {
+  color: rgba(250, 249, 247, 0.7);
+  transition-duration: 0.2s;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+  }
+  
+  .container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px; 
+/* ChatGPT sugguested to add after removing div in style
+    prompts: 
+    - how do i get rid of the excess height under the containers
+    - display: block; didn't do anything. i think its something in the containers */
+  background-color: black;
+  }
+  
+  .container .fade {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden; 
+  background-color: transparent;
+  margin: 0;
+  text-align: center;
+}
+  
+  .container div {
+  background-color: rgba(250, 240, 20, 0); /* adjust a to see where the border is*/
+  width: auto;
+  height: auto;
+  margin: 15px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+  }
+  
+  .textonimage {
+  position: absolute;
+  top: -50%;
+  left: 0%;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  color: rgba(250, 250, 250, 1);
+  z-index: -1;
+  }
+ 
+  .textonimage p {
+  margin: 5px;
+  padding: 0;
+  }
+  
+  .fade:hover img{
+  opacity: 0.75;
+  transition-duration: 0.2s; 
+  }
+ 
+.fade:hover .textonimage {
+  z-index: 1;         
+  opacity: 1;
+/*  ChatGPT assisted, prompts used: 
+  - how do i make "rebranding" "mel's diner" only appear when the mouse hovers over the img box?
+  - can you make the text 1 opacity instead of 0.5 opacity when it is hovered
+  - how to do show the text when hovered with z-index?
+  (none of them really worked)
+  */
+  }
+  
+
+</style>
+</head>
+  
+  
+<body>
+
+  <nav>
+<ul>
+<li><a href="https://ankethemok.github.io/centered-testing1/">Home</a></li>
+<li><a href="https://ankethemok.github.io/testing2/">About Me</a></li>
+<li><a href="/">My Work</a></li>
+</ul>
+</nav>
+ 
+<div class="container">
+  <div class="fade">
+<img src="mels-rebranding-mockup.jpg" alt="Mel's Diner Rebranding">
+    <div class="textonimage">
+    <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">Rebranding</p>
+<p style="text-align: center;">Mel's Diner</p>
+    </div>
+    </div>
+  </div>
+    
+  <div class="fade">
+<img src="alley-cat-web-redesign.jpg" alt="Alley Cat Cafe Website Redesign" class="fade">  
+      <div class="textonimage">
+      <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">Website Redesign</p>
+<p style="text-align: center;">Alley Cat Cafe</p>
+      </div>
+      </div>
+  </div>
+    
+  <div class="fade">
+<img src="app-littlejoys.jpg" alt="Little Joys App" class="fade">
+      <div class="textonimage">
+      <div class="centered">
+<p style="font-size: 30px; font-weight: 400; text-align: center;">App Idea</p>
+<p style="text-align: center;">Little Joys</p>
+      </div>
+      </div>
+  </div>
+
+  </div>
+
+  <div>
+  <footer>
+<ul>
+<li><a href="/">Let's connect:</a></li>
+<li><a href="/">ankekmok@gmail.com</a></li>
+<li><a href="/">647-465-9939</a></li>
+</ul>
+</footer>
+  </div>
+  
+  
+  
+</body>
+  
+  
+
+</html>
